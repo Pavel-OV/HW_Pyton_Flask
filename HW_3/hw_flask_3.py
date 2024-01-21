@@ -29,7 +29,7 @@ def index():
 def register():    
     form = RegistrationForm()
     if form.validate_on_submit():
-        user =User(user_name=form.user_name.data,
+        user = User(user_name=form.user_name.data,
                    user_surname=form.user_surname.data,
                    email=form.email.data, 
                    password=sha256(form.password.data.encode(encoding='utf-8')).hexdigest())

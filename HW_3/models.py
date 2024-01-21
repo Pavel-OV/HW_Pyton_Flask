@@ -9,4 +9,4 @@ class User(db.Model):
     user_name = db.Column(db.String(80), nullable=False)
     user_surname = db.Column(db.String(120), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
-    password = db.Column(db.String(256), nullable=False)
+    password = db.Column(db.String(64), nullable=False)

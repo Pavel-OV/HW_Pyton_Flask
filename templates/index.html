@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+<title>Главная</title>
+</head>
+<body>
+    {% block title %}  {% endblock %}
+    <section >
+        <header class="header">
+            <p>Меню</p>
+            <nav>
+                <ul>
+                    <li><a href="/">Главная</a> </li>
+                    <li><a href="/clothes/">Одежда</a> </li>
+                    <li><a href="/shoes/">Обувь</a> </li>
+                    <li><a href="/jacket/">Куртки</a> </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    {% block content%}
+    {% endblock %}
+
+    <section>
+        <footer>
+            <p class="alert-dark">Все права защищены &copy;</p>
+        </footer>
+    </section>
+
+</body>
+</html>
